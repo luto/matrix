@@ -1,0 +1,11 @@
+(module CAPTOUCH-CIRCLE-HOLE-DUAL (layer F.Cu) (tedit 5EEF681B)
+  (attr virtual)
+  (fp_text reference CAPTOUCH-CIRCLE-HOLE-DUAL (at -2.54 0 90) (layer B.Fab)
+    (effects (font (size 1 1) (thickness 0.1)))
+  )
+  (fp_text value CAPTOUCH-CIRCLE-HOLE-DUAL (at 2.54 0 90) (layer B.Fab) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (pad 1 smd rect (at -0.9 0) (size 1.5 3.2) (layers B.Cu B.Paste B.Mask))
+  (pad 2 smd rect (at 0.9 0) (size 1.5 3.2) (layers B.Cu B.Paste B.Mask))
+)
