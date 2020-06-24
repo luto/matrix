@@ -141,17 +141,6 @@ $EndComp
 Wire Wire Line
 	7900 3850 7900 4000
 NoConn ~ 8400 3650
-$Comp
-L Device:R R3
-U 1 1 5EFFE1B5
-P 7300 2500
-F 0 "R3" H 7370 2546 50  0000 L CNN
-F 1 "3.3 k" H 7370 2455 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 7230 2500 50  0001 C CNN
-F 3 "~" H 7300 2500 50  0001 C CNN
-	1    7300 2500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7400 2350 7300 2350
 $Comp
@@ -644,17 +633,6 @@ F 3 "~" H 5250 2250 50  0001 C CNN
 	1    5350 2300
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R R1
-U 1 1 5EF04732
-P 1500 2350
-F 0 "R1" V 1293 2350 50  0000 C CNN
-F 1 "4.7 m" V 1384 2350 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 1430 2350 50  0001 C CNN
-F 3 "~" H 1500 2350 50  0001 C CNN
-	1    1500 2350
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	4900 1950 5050 1950
 Connection ~ 5050 1950
@@ -771,10 +749,10 @@ Wire Wire Line
 	7300 2650 7100 2650
 Connection ~ 7100 2650
 $Comp
-L power:VCC #PWR?
+L power:VCC #PWR0107
 U 1 1 5F0E1A5F
 P 10450 1300
-F 0 "#PWR?" H 10450 1150 50  0001 C CNN
+F 0 "#PWR0107" H 10450 1150 50  0001 C CNN
 F 1 "VCC" H 10465 1473 50  0000 C CNN
 F 2 "" H 10450 1300 50  0001 C CNN
 F 3 "" H 10450 1300 50  0001 C CNN
@@ -838,4 +816,26 @@ Wire Notes Line
 	3650 3050 3650 950 
 Text Notes 1050 950  0    50   ~ 10
 controller
+$Comp
+L Device:R_Variable R1
+U 1 1 5EF1C22A
+P 1500 2350
+F 0 "R1" V 1400 2350 50  0000 C CNN
+F 1 "4.7 m" V 1300 2350 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" V 1430 2350 50  0001 C CNN
+F 3 "~" H 1500 2350 50  0001 C CNN
+	1    1500 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Variable R3
+U 1 1 5EF20371
+P 7300 2500
+F 0 "R3" H 7428 2546 50  0000 L CNN
+F 1 "3.3 k" H 7428 2455 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" V 7230 2500 50  0001 C CNN
+F 3 "~" H 7300 2500 50  0001 C CNN
+	1    7300 2500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
